@@ -10,12 +10,20 @@ import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.os.Handler
 import android.os.Looper
+import com.example.myproyect.databinding.ActivityMainBinding
 import java.util.concurrent.Executors
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+  binding.btnIr.setOnClickListener {
+
+  }
 
         val btnIr = findViewById<Button>(R.id.btnIr)
         btnIr.setOnClickListener{
